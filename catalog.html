@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Catalog</title>
+	<link rel="stylesheet" href="CSS/stylediscount.css">
+	<link rel="stylesheet" href="CSS/catalog.css">
+</head>
+
+<body>
+	<div class="wraper">
+		<div class="wraper-row fon">
+			<header class="header">
+				<div class="container">
+
+					<div class="header__content">
+						<div class="header__logo">
+							<a href="#" class="header__logo-link">
+								<img src="img/logo.svg" alt="logo"></a>
+						</div>
+
+						<div class="header__nav menu">
+							<div class="nav__icon">
+								<span></span>
+							</div>
+							<nav class="header__navigation">
+								<ul class="navigation__list">
+									<li class="navigation__item"><a href="#" class="link">Каталог</a></li>
+									<li class="navigation__item"><a href="#" class="link">О продукте</a></li>
+									<li class="navigation__item"><a href="#" class="link">О нас </a></li>
+									<li class="navigation__item"><a href="#" class="link">FAQ</a></li>
+
+								</ul>
+							</nav>
+						</div>
+
+
+
+						<div class="header__basket">
+							<img src="img/basket.svg" alt="basket">
+							<span class="header__number-basket">0</span>
+
+						</div>
+					</div>
+				</div>
+			</header>
+
+			<main class="main__catalog">
+				<div class="container">
+					<div class="catalog__container">
+						<span class="catalog__nav">Каталог /</span>
+						<div class="catalog__body">
+
+							<section class="catalog__filter">
+								<div class="filter__item">
+									<div class="custom__checkbox">
+										<input type="checkbox" id="favorites" class="custom__input">
+										<label for="favorites" class="custom__label checkbox__favorites"><span
+												class="checkbox__heart">&#10084;</span>
+											Избранное (7)</label>
+									</div>
+									<div class="filter__custom">
+										<h4>Бренд</h4>
+										<div class="custom__checkbox">
+											<input type="checkbox" id="f-1" class="custom__input">
+											<label for="f-1" class="custom__label">Vaporlax</label>
+										</div>
+
+										<div class="custom__checkbox">
+											<input type="checkbox" id="f-2" class="custom__input">
+											<label for="f-2" class="custom__label">Elf-bar</label>
+										</div>
+
+										<div class="custom__checkbox">
+											<input type="checkbox" id="f-3" class="custom__input">
+											<label for="f-3" class="custom__label">Hugo Rgb</label>
+										</div>
+
+										<div class="custom__checkbox">
+											<input type="checkbox" id="f-4" class="custom__input">
+											<label for="f-4" class="custom__label">Velik</label>
+										</div>
+
+										<div class="custom__checkbox">
+											<input type="checkbox" id="f-5" class="custom__input">
+											<label for="f-5" class="custom__label">Airis</label>
+										</div>
+										<div class="custom__checkbox">
+											<input type="checkbox" id="f-6" class="custom__input">
+											<label for="f-6" class="custom__label">Hugo Supro</label>
+										</div>
+									</div>
+									<div class="filter__custom">
+										<h4>Количество Тяг</h4>
+										<div class="custom__checkbox">
+											<input type="checkbox" id="f-7" class="custom__input">
+											<label for="f-7" class="custom__label">800</label>
+										</div>
+
+										<div class="custom__checkbox">
+											<input type="checkbox" id="f-8" class="custom__input">
+											<label for="f-8" class="custom__label">1500</label>
+										</div>
+
+										<div class="custom__checkbox">
+											<input type="checkbox" id="f-9" class="custom__input">
+											<label for="f-9" class="custom__label">1800</label>
+										</div>
+
+										<div class="custom__checkbox">
+											<input type="checkbox" id="f-10" class="custom__input">
+											<label for="f-10" class="custom__label">2200</label>
+										</div>
+									</div>
+									<div class="filter__custom">
+										<h4>Температура Тяги</h4>
+										<div class="custom__checkbox">
+											<input type="checkbox" id="f-11" class="custom__input">
+											<label for="f-11" class="custom__label">Холодный</label>
+										</div>
+
+										<div class="custom__checkbox">
+											<input type="checkbox" id="f-12" class="custom__input">
+											<label for="f-12" class="custom__label">Не Холодный</label>
+										</div>
+
+									</div>
+									<div class="filter__custom">
+										<h4>Послевкусие</h4>
+										<div class="custom__checkbox">
+											<input type="checkbox" id="f-13" class="custom__input">
+											<label for="f-13" class="custom__label">Сладкий</label>
+										</div>
+
+										<div class="custom__checkbox">
+											<input type="checkbox" id="f-14" class="custom__input">
+											<label for="f-14" class="custom__label">Кисло-Сладкий</label>
+										</div>
+
+										<div class="custom__checkbox">
+											<input type="checkbox" id="f-45" class="custom__input">
+											<label for="f-45" class="custom__label">Кислый</label>
+										</div>
+
+										<div class="custom__checkbox">
+											<input type="checkbox" id="f-15" class="custom__input">
+											<label for="f-15" class="custom__label">Нейтральный, Сладкий</label>
+										</div>
+
+										<div class="custom__checkbox">
+											<input type="checkbox" id="f-16" class="custom__input">
+											<label for="f-16" class="custom__label">Напиток</label>
+										</div>
+									</div>
+									<div class="filter__custom">
+										<h4>Крепость</h4>
+										<div class="custom__checkbox">
+											<input type="checkbox" id="f-17" class="custom__input">
+											<label for="f-17" class="custom__label">50Mg</label>
+										</div>
+									</div>
+									<div class="filter__custom">
+										<h4>Вкус</h4>
+										<div class="custom__checkbox">
+											<input type="checkbox" id="f-18" class="custom__input">
+											<label for="f-18" class="custom__label">Banana</label>
+										</div>
+										<div class="custom__checkbox">
+											<input type="checkbox" id="f-41" class="custom__input">
+											<label for="f-41" class="custom__label">Cola</label>
+										</div>
+										<div class="custom__checkbox">
+											<input type="checkbox" id="f-19" class="custom__input">
+											<label for="f-19" class="custom__label">Grape</label>
+										</div>
+										<div class="custom__checkbox">
+											<input type="checkbox" id="f-20" class="custom__input">
+											<label for="f-20" class="custom__label">Lychee</label>
+										</div>
+										<div class="custom__checkbox">
+											<input type="checkbox" id="f-21" class="custom__input">
+											<label for="f-21" class="custom__label">Lush Ice</label>
+										</div>
+										<div class="custom__checkbox">
+											<input type="checkbox" id="f-22" class="custom__input">
+											<label for="f-22" class="custom__label">Mango</label>
+										</div>
+										<div class="custom__checkbox">
+											<input type="checkbox" id="f-23" class="custom__input">
+											<label for="f-23" class="custom__label">Peach</label>
+										</div>
+										<div class="custom__checkbox">
+											<input type="checkbox" id="f-24" class="custom__input">
+											<label for="f-24" class="custom__label">Pineapple Peach Mango</label>
+										</div>
+										<div class="custom__checkbox">
+											<input type="checkbox" id="f-25" class="custom__input">
+											<label for="f-25" class="custom__label">Strawberry Banana</label>
+										</div>
+										<div class="custom__checkbox">
+											<input type="checkbox" id="f-26" class="custom__input">
+											<label for="f-26" class="custom__label">Strawberry Ice Cream</label>
+										</div>
+										<div class="custom__checkbox">
+											<input type="checkbox" id="f-27" class="custom__input">
+											<label for="f-27" class="custom__label">Watermelon</label>
+										</div>
+										<div class="custom__checkbox">
+											<input type="checkbox" id="f-28" class="custom__input">
+											<label for="f-28" class="custom__label">Orange Pineapple Mango</label>
+										</div>
+										<div class="custom__checkbox">
+											<input type="checkbox" id="f-29" class="custom__input">
+											<label for="f-29" class="custom__label">Guava Kiwi</label>
+										</div>
+										<div class="custom__checkbox">
+											<input type="checkbox" id="f-30" class="custom__input">
+											<label for="f-30" class="custom__label">Energy Juice</label>
+										</div>
+										<div class="custom__checkbox">
+											<input type="checkbox" id="f-31" class="custom__input">
+											<label for="f-31" class="custom__label">Energy Juse</label>
+										</div>
+										<div class="custom__checkbox">
+											<input type="checkbox" id="f-32" class="custom__input">
+											<label for="f-32" class="custom__label">Cool Mint</label>
+										</div>
+										<div class="custom__checkbox">
+											<input type="checkbox" id="f-33" class="custom__input">
+											<label for="f-33" class="custom__label">Thei Mango</label>
+										</div>
+										<div class="custom__checkbox">
+											<input type="checkbox" id="f-34" class="custom__input">
+											<label for="f-34" class="custom__label">Mexied Berris</label>
+										</div>
+										<div class="custom__checkbox">
+											<input type="checkbox" id="f-35" class="custom__input">
+											<label for="f-35" class="custom__label">Pina Colada</label>
+										</div>
+										<div class="custom__checkbox">
+											<input type="checkbox" id="f-36" class="custom__input">
+											<label for="f-36" class="custom__label">Mint</label>
+										</div>
+										<div class="custom__checkbox">
+											<input type="checkbox" id="f-37" class="custom__input">
+											<label for="f-37" class="custom__label">Aloe Grape</label>
+										</div>
+										<div class="custom__checkbox">
+											<input type="checkbox" id="f-38" class="custom__input">
+											<label for="f-38" class="custom__label">Mixed Berries</label>
+										</div>
+										<div class="custom__checkbox">
+											<input type="checkbox" id="f-42" class="custom__input">
+											<label for="f-42" class="custom__label">Banana Custard</label>
+										</div>
+										<div class="custom__checkbox">
+											<input type="checkbox" id="f-39" class="custom__input">
+											<label for="f-39" class="custom__label">Bluberry</label>
+										</div>
+										<div class="custom__checkbox">
+											<input type="checkbox" id="f-40" class="custom__input">
+											<label for="f-40" class="custom__label">Blue Razz Lemonade</label>
+										</div>
+
+
+									</div>
+								</div>
+							</section>
+							<section class="catalog__wrap">
+
+								<div class="catalog__search">
+									<input type="text" class="search__input" placeholder="Поиск">
+									<button class="search__buttom"><img src="img/search__catalog.svg" alt="search"
+											class="search__img"></button>
+								</div>
+
+
+								<!--card_______________________________________________________________________-->
+								<div class="catalog__body">
+									<div class="catalog__cards">
+
+										<div class="catalog__card">
+											<div class="card__img">
+												<div class="card__status">
+													<!-- 	<div class="status"> <a class="card__new"></a></div>
+													<div class="status"> <a class="card__top-sale"></a></div> -->
+													<div class="status"> <a class="card__sale">Распродажа</a></div>
+												</div>
+												<?xml version="1.0"?><svg width="640" height="480" viewbox="0 0 640 480"
+													xmlns="http://www.w3.org/2000/svg">
+													<title>Small red heart with transparent background</title>
+													<g>
+														<title>Layer 1</title>
+														<g id="layer1">
+															<path id="svg_2"
+																d="m219.28949,21.827393c-66.240005,0 -119.999954,53.76001 -119.999954,120c0,134.755524 135.933151,170.08728 228.562454,303.308044c87.574219,-132.403381 228.5625,-172.854584 228.5625,-303.308044c0,-66.23999 -53.759888,-120 -120,-120c-48.047913,0 -89.401611,28.370422 -108.5625,69.1875c-19.160797,-40.817078 -60.514496,-69.1875 -108.5625,-69.1875z" />
+														</g>
+													</g>
+												</svg>
+
+												<img src="img/Mask Group (1).png" alt="smoke" class="img__cigarette">
+											</div>
+											<div class="card__content">
+
+												<div class="card__reting reting_set">
+													<div class="reting__body">
+														<div class="reting__active"></div>
+														<div class="reting__items">
+															<input type="radio" class="reting__item" value="1" name="reting">
+															<input type="radio" class="reting__item" value="2" name="reting">
+															<input type="radio" class="reting__item" value="3" name="reting">
+															<input type="radio" class="reting__item" value="4" name="reting">
+															<input type="radio" class="reting__item" value="5" name="reting">
+														</div>
+													</div>
+													<div class="reting__value">2</div>
+												</div>
+
+												<div class="card__title">VAPORLAX AERO - LUSH ICE - 800 PUFF</div>
+												<div class="card__price">
+													<span class="price__not">299 грн</span>
+													<span class="price__actual"> <span class="price__title">цена:</span> 299
+														грн</span>
+												</div>
+												<div class="card__button"><button class="button__basket">Добавить в корзину</button>
+												</div>
+											</div>
+										</div>
+
+										<div class="catalog__card">
+											<div class="card__img">
+												<div class="card__status">
+													<!-- 	<span class="card__new"> Новинка</span> -->
+													<span class="card__top-sale"> Топ продаж</span>
+													<!-- 	<span class="card__sale">Распродажа</span> -->
+												</div>
+												<?xml version="1.0"?><svg width="640" height="480" viewbox="0 0 640 480"
+													xmlns="http://www.w3.org/2000/svg">
+													<title>Small red heart with transparent background</title>
+													<g>
+														<title>Layer 1</title>
+														<g id="layer1">
+															<path id="svg_2"
+																d="m219.28949,21.827393c-66.240005,0 -119.999954,53.76001 -119.999954,120c0,134.755524 135.933151,170.08728 228.562454,303.308044c87.574219,-132.403381 228.5625,-172.854584 228.5625,-303.308044c0,-66.23999 -53.759888,-120 -120,-120c-48.047913,0 -89.401611,28.370422 -108.5625,69.1875c-19.160797,-40.817078 -60.514496,-69.1875 -108.5625,-69.1875z" />
+														</g>
+													</g>
+												</svg>
+
+												<img src="img/Mask Group (3).png" alt="smoke" class="img__cigarette">
+											</div>
+											<div class="card__content">
+
+												<div class="card__reting reting_set">
+													<div class="reting__body">
+														<div class="reting__active"></div>
+														<div class="reting__items">
+															<input type="radio" class="reting__item" value="1" name="reting">
+															<input type="radio" class="reting__item" value="2" name="reting">
+															<input type="radio" class="reting__item" value="3" name="reting">
+															<input type="radio" class="reting__item" value="4" name="reting">
+															<input type="radio" class="reting__item" value="5" name="reting">
+														</div>
+													</div>
+													<div class="reting__value">2</div>
+												</div>
+
+												<div class="card__title">VAPORLAX AERO - LUSH ICE - 800 PUFF</div>
+												<div class="card__price">
+													<span class="price__not">299 грн</span>
+													<span class="price__actual"> <span class="price__title">цена:</span> 299
+														грн</span>
+												</div>
+												<div class="card__button"><button class="button__basket">Добавить в корзину</button>
+												</div>
+											</div>
+										</div>
+
+										<div class="catalog__card">
+											<div class="card__img">
+												<div class="card__status">
+													<span class="card__new"> Новинка</span>
+													<span class="card__top-sale"> Топ продаж</span>
+													<!-- <span class="card__sale">Распродажа</span> -->
+												</div>
+												<?xml version="1.0"?><svg width="640" height="480" viewbox="0 0 640 480"
+													xmlns="http://www.w3.org/2000/svg">
+													<title>Small red heart with transparent background</title>
+													<g>
+														<title>Layer 1</title>
+														<g id="layer1">
+															<path id="svg_2"
+																d="m219.28949,21.827393c-66.240005,0 -119.999954,53.76001 -119.999954,120c0,134.755524 135.933151,170.08728 228.562454,303.308044c87.574219,-132.403381 228.5625,-172.854584 228.5625,-303.308044c0,-66.23999 -53.759888,-120 -120,-120c-48.047913,0 -89.401611,28.370422 -108.5625,69.1875c-19.160797,-40.817078 -60.514496,-69.1875 -108.5625,-69.1875z" />
+														</g>
+													</g>
+												</svg>
+
+												<img src="img/Mask Group.png" alt="smoke" class="img__cigarette">
+											</div>
+											<div class="card__content">
+
+												<div class="card__reting reting_set">
+													<div class="reting__body">
+														<div class="reting__active"></div>
+														<div class="reting__items">
+															<input type="radio" class="reting__item" value="1" name="reting">
+															<input type="radio" class="reting__item" value="2" name="reting">
+															<input type="radio" class="reting__item" value="3" name="reting">
+															<input type="radio" class="reting__item" value="4" name="reting">
+															<input type="radio" class="reting__item" value="5" name="reting">
+														</div>
+													</div>
+													<div class="reting__value">2</div>
+												</div>
+
+												<div class="card__title">VAPORLAX AERO - LUSH ICE - 800 PUFF</div>
+												<div class="card__price">
+													<span class="price__not">299 грн</span>
+													<span class="price__actual"> <span class="price__title">цена:</span> 299
+														грн</span>
+												</div>
+												<div class="card__button"><button class="button__basket">Добавить в корзину</button>
+												</div>
+											</div>
+										</div>
+
+										<div class="catalog__card">
+											<div class="card__img">
+												<div class="card__status">
+													<span class="card__new"> Новинка</span>
+													<!-- 	<span class="card__top-sale"> Топ продаж</span>
+													<span class="card__sale">Распродажа</span> -->
+												</div>
+												<?xml version="1.0"?><svg width="640" height="480" viewbox="0 0 640 480"
+													xmlns="http://www.w3.org/2000/svg">
+													<title>Small red heart with transparent background</title>
+													<g>
+														<title>Layer 1</title>
+														<g id="layer1">
+															<path id="svg_2"
+																d="m219.28949,21.827393c-66.240005,0 -119.999954,53.76001 -119.999954,120c0,134.755524 135.933151,170.08728 228.562454,303.308044c87.574219,-132.403381 228.5625,-172.854584 228.5625,-303.308044c0,-66.23999 -53.759888,-120 -120,-120c-48.047913,0 -89.401611,28.370422 -108.5625,69.1875c-19.160797,-40.817078 -60.514496,-69.1875 -108.5625,-69.1875z" />
+														</g>
+													</g>
+												</svg>
+
+												<img src="img/Mask Group (2).png" alt="smoke" class="img__cigarette">
+											</div>
+											<div class="card__content">
+
+												<div class="card__reting reting_set">
+													<div class="reting__body">
+														<div class="reting__active"></div>
+														<div class="reting__items">
+															<input type="radio" class="reting__item" value="1" name="reting">
+															<input type="radio" class="reting__item" value="2" name="reting">
+															<input type="radio" class="reting__item" value="3" name="reting">
+															<input type="radio" class="reting__item" value="4" name="reting">
+															<input type="radio" class="reting__item" value="5" name="reting">
+														</div>
+													</div>
+													<div class="reting__value">2</div>
+												</div>
+
+												<div class="card__title">VAPORLAX AERO - LUSH ICE - 800 PUFF</div>
+												<div class="card__price">
+													<span class="price__not">299 грн</span>
+													<span class="price__actual"> <span class="price__title">цена:</span> 299
+														грн</span>
+												</div>
+												<div class="card__button"><button class="button__basket">Добавить в корзину</button>
+												</div>
+											</div>
+										</div>
+
+										<div class="catalog__card">
+											<div class="card__img">
+												<div class="card__status">
+													<!-- 	<span class="card__new"> Новинка</span>
+													<span class="card__top-sale"> Топ продаж</span> -->
+													<span class="card__sale">Распродажа</span>
+												</div>
+												<?xml version="1.0"?><svg width="640" height="480" viewbox="0 0 640 480"
+													xmlns="http://www.w3.org/2000/svg">
+													<title>Small red heart with transparent background</title>
+													<g>
+														<title>Layer 1</title>
+														<g id="layer1">
+															<path id="svg_2"
+																d="m219.28949,21.827393c-66.240005,0 -119.999954,53.76001 -119.999954,120c0,134.755524 135.933151,170.08728 228.562454,303.308044c87.574219,-132.403381 228.5625,-172.854584 228.5625,-303.308044c0,-66.23999 -53.759888,-120 -120,-120c-48.047913,0 -89.401611,28.370422 -108.5625,69.1875c-19.160797,-40.817078 -60.514496,-69.1875 -108.5625,-69.1875z" />
+														</g>
+													</g>
+												</svg>
+
+												<img src="img/Mask Group (1).png" alt="smoke" class="img__cigarette">
+											</div>
+											<div class="card__content">
+
+												<div class="card__reting reting_set">
+													<div class="reting__body">
+														<div class="reting__active"></div>
+														<div class="reting__items">
+															<input type="radio" class="reting__item" value="1" name="reting">
+															<input type="radio" class="reting__item" value="2" name="reting">
+															<input type="radio" class="reting__item" value="3" name="reting">
+															<input type="radio" class="reting__item" value="4" name="reting">
+															<input type="radio" class="reting__item" value="5" name="reting">
+														</div>
+													</div>
+													<div class="reting__value">2</div>
+												</div>
+
+												<div class="card__title">VAPORLAX AERO - LUSH ICE - 800 PUFF</div>
+												<div class="card__price">
+													<span class="price__not">299 грн</span>
+													<span class="price__actual"> <span class="price__title">цена:</span> 299
+														грн</span>
+												</div>
+												<div class="card__button"><button class="button__basket">Добавить в корзину</button>
+												</div>
+											</div>
+										</div>
+
+										<div class="catalog__card">
+											<div class="card__img">
+												<div class="card__status">
+													<span class="card__new"> Новинка</span>
+													<!-- 	<span class="card__top-sale"> Топ продаж</span>
+													<span class="card__sale">Распродажа</span> -->
+												</div>
+												<?xml version="1.0"?><svg width="640" height="480" viewbox="0 0 640 480"
+													xmlns="http://www.w3.org/2000/svg">
+													<title>Small red heart with transparent background</title>
+													<g>
+														<title>Layer 1</title>
+														<g id="layer1">
+															<path id="svg_2"
+																d="m219.28949,21.827393c-66.240005,0 -119.999954,53.76001 -119.999954,120c0,134.755524 135.933151,170.08728 228.562454,303.308044c87.574219,-132.403381 228.5625,-172.854584 228.5625,-303.308044c0,-66.23999 -53.759888,-120 -120,-120c-48.047913,0 -89.401611,28.370422 -108.5625,69.1875c-19.160797,-40.817078 -60.514496,-69.1875 -108.5625,-69.1875z" />
+														</g>
+													</g>
+												</svg>
+
+												<img src="img/Mask Group (2).png" alt="smoke" class="img__cigarette">
+											</div>
+											<div class="card__content">
+
+												<div class="card__reting reting_set">
+													<div class="reting__body">
+														<div class="reting__active"></div>
+														<div class="reting__items">
+															<input type="radio" class="reting__item" value="1" name="reting">
+															<input type="radio" class="reting__item" value="2" name="reting">
+															<input type="radio" class="reting__item" value="3" name="reting">
+															<input type="radio" class="reting__item" value="4" name="reting">
+															<input type="radio" class="reting__item" value="5" name="reting">
+														</div>
+													</div>
+													<div class="reting__value">2</div>
+												</div>
+
+												<div class="card__title">VAPORLAX AERO - LUSH ICE - 800 PUFF</div>
+												<div class="card__price">
+													<span class="price__not">299 грн</span>
+													<span class="price__actual"> <span class="price__title">цена:</span> 299
+														грн</span>
+												</div>
+												<div class="card__button"><button class="button__basket">Добавить в корзину</button>
+												</div>
+											</div>
+										</div>
+
+										<div class="catalog__card">
+											<div class="card__img">
+												<div class="card__status">
+													<!-- <span class="card__new"> Новинка</span>
+													<span class="card__top-sale"> Топ продаж</span> -->
+													<span class="card__sale">Распродажа</span>
+												</div>
+												<?xml version="1.0"?><svg width="640" height="480" viewbox="0 0 640 480"
+													xmlns="http://www.w3.org/2000/svg">
+													<title>Small red heart with transparent background</title>
+													<g>
+														<title>Layer 1</title>
+														<g id="layer1">
+															<path id="svg_2"
+																d="m219.28949,21.827393c-66.240005,0 -119.999954,53.76001 -119.999954,120c0,134.755524 135.933151,170.08728 228.562454,303.308044c87.574219,-132.403381 228.5625,-172.854584 228.5625,-303.308044c0,-66.23999 -53.759888,-120 -120,-120c-48.047913,0 -89.401611,28.370422 -108.5625,69.1875c-19.160797,-40.817078 -60.514496,-69.1875 -108.5625,-69.1875z" />
+														</g>
+													</g>
+												</svg>
+
+												<img src="img/Mask Group (1).png" alt="smoke" class="img__cigarette">
+											</div>
+											<div class="card__content">
+
+												<div class="card__reting reting_set">
+													<div class="reting__body">
+														<div class="reting__active"></div>
+														<div class="reting__items">
+															<input type="radio" class="reting__item" value="1" name="reting">
+															<input type="radio" class="reting__item" value="2" name="reting">
+															<input type="radio" class="reting__item" value="3" name="reting">
+															<input type="radio" class="reting__item" value="4" name="reting">
+															<input type="radio" class="reting__item" value="5" name="reting">
+														</div>
+													</div>
+													<div class="reting__value">2</div>
+												</div>
+
+												<div class="card__title">VAPORLAX AERO - LUSH ICE - 800 PUFF</div>
+												<div class="card__price">
+													<span class="price__not">299 грн</span>
+													<span class="price__actual"> <span class="price__title">цена:</span> 299
+														грн</span>
+												</div>
+												<div class="card__button"><button class="button__basket">Добавить в корзину</button>
+												</div>
+											</div>
+										</div>
+
+										<div class="catalog__card">
+											<div class="card__img">
+												<div class="card__status">
+													<!-- 	<span class="card__new"> Новинка</span> -->
+													<span class="card__top-sale"> Топ продаж</span>
+													<!-- 	<span class="card__sale">Распродажа</span> -->
+												</div>
+												<?xml version="1.0"?><svg width="640" height="480" viewbox="0 0 640 480"
+													xmlns="http://www.w3.org/2000/svg">
+													<title>Small red heart with transparent background</title>
+													<g>
+														<title>Layer 1</title>
+														<g id="layer1">
+															<path id="svg_2"
+																d="m219.28949,21.827393c-66.240005,0 -119.999954,53.76001 -119.999954,120c0,134.755524 135.933151,170.08728 228.562454,303.308044c87.574219,-132.403381 228.5625,-172.854584 228.5625,-303.308044c0,-66.23999 -53.759888,-120 -120,-120c-48.047913,0 -89.401611,28.370422 -108.5625,69.1875c-19.160797,-40.817078 -60.514496,-69.1875 -108.5625,-69.1875z" />
+														</g>
+													</g>
+												</svg>
+
+												<img src="img/Mask Group (3).png" alt="smoke" class="img__cigarette">
+											</div>
+											<div class="card__content">
+
+												<div class="card__reting reting_set">
+													<div class="reting__body">
+														<div class="reting__active"></div>
+														<div class="reting__items">
+															<input type="radio" class="reting__item" value="1" name="reting">
+															<input type="radio" class="reting__item" value="2" name="reting">
+															<input type="radio" class="reting__item" value="3" name="reting">
+															<input type="radio" class="reting__item" value="4" name="reting">
+															<input type="radio" class="reting__item" value="5" name="reting">
+														</div>
+													</div>
+													<div class="reting__value">2</div>
+												</div>
+
+												<div class="card__title">VAPORLAX AERO - LUSH ICE - 800 PUFF</div>
+												<div class="card__price">
+													<span class="price__not">299 грн</span>
+													<span class="price__actual"> <span class="price__title">цена:</span> 299
+														грн</span>
+												</div>
+												<div class="card__button"><button class="button__basket">Добавить в корзину</button>
+												</div>
+											</div>
+										</div>
+
+										<div class="catalog__card">
+											<div class="card__img">
+												<div class="card__status">
+													<span class="card__new"> Новинка</span>
+													<span class="card__top-sale"> Топ продаж</span>
+													<!-- 	<span class="card__sale">Распродажа</span> -->
+												</div>
+												<?xml version="1.0"?><svg width="640" height="480" viewbox="0 0 640 480"
+													xmlns="http://www.w3.org/2000/svg">
+													<title>Small red heart with transparent background</title>
+													<g>
+														<title>Layer 1</title>
+														<g id="layer1">
+															<path id="svg_2"
+																d="m219.28949,21.827393c-66.240005,0 -119.999954,53.76001 -119.999954,120c0,134.755524 135.933151,170.08728 228.562454,303.308044c87.574219,-132.403381 228.5625,-172.854584 228.5625,-303.308044c0,-66.23999 -53.759888,-120 -120,-120c-48.047913,0 -89.401611,28.370422 -108.5625,69.1875c-19.160797,-40.817078 -60.514496,-69.1875 -108.5625,-69.1875z" />
+														</g>
+													</g>
+												</svg>
+
+												<img src="img/Mask Group.png" alt="smoke" class="img__cigarette">
+											</div>
+											<div class="card__content">
+
+												<div class="card__reting reting_set">
+													<div class="reting__body">
+														<div class="reting__active"></div>
+														<div class="reting__items">
+															<input type="radio" class="reting__item" value="1" name="reting">
+															<input type="radio" class="reting__item" value="2" name="reting">
+															<input type="radio" class="reting__item" value="3" name="reting">
+															<input type="radio" class="reting__item" value="4" name="reting">
+															<input type="radio" class="reting__item" value="5" name="reting">
+														</div>
+													</div>
+													<div class="reting__value">2</div>
+												</div>
+
+												<div class="card__title">VAPORLAX AERO - LUSH ICE - 800 PUFF</div>
+												<div class="card__price">
+													<span class="price__not">299 грн</span>
+													<span class="price__actual"> <span class="price__title">цена:</span> 299
+														грн</span>
+												</div>
+												<div class="card__button"><button class="button__basket">Добавить в корзину</button>
+												</div>
+											</div>
+										</div>
+
+										<div class="catalog__card">
+											<div class="card__img">
+												<div class="card__status">
+													<span class="card__new"> Новинка</span>
+													<!-- <span class="card__top-sale"> Топ продаж</span>
+													<span class="card__sale">Распродажа</span> -->
+												</div>
+												<?xml version="1.0"?><svg width="640" height="480" viewbox="0 0 640 480"
+													xmlns="http://www.w3.org/2000/svg">
+													<title>Small red heart with transparent background</title>
+													<g>
+														<title>Layer 1</title>
+														<g id="layer1">
+															<path id="svg_2"
+																d="m219.28949,21.827393c-66.240005,0 -119.999954,53.76001 -119.999954,120c0,134.755524 135.933151,170.08728 228.562454,303.308044c87.574219,-132.403381 228.5625,-172.854584 228.5625,-303.308044c0,-66.23999 -53.759888,-120 -120,-120c-48.047913,0 -89.401611,28.370422 -108.5625,69.1875c-19.160797,-40.817078 -60.514496,-69.1875 -108.5625,-69.1875z" />
+														</g>
+													</g>
+												</svg>
+
+												<img src="img/Mask Group (2).png" alt="smoke" class="img__cigarette">
+											</div>
+											<div class="card__content">
+
+												<div class="card__reting reting_set">
+													<div class="reting__body">
+														<div class="reting__active"></div>
+														<div class="reting__items">
+															<input type="radio" class="reting__item" value="1" name="reting">
+															<input type="radio" class="reting__item" value="2" name="reting">
+															<input type="radio" class="reting__item" value="3" name="reting">
+															<input type="radio" class="reting__item" value="4" name="reting">
+															<input type="radio" class="reting__item" value="5" name="reting">
+														</div>
+													</div>
+													<div class="reting__value">2</div>
+												</div>
+
+												<div class="card__title">VAPORLAX AERO - LUSH ICE - 800 PUFF</div>
+												<div class="card__price">
+													<span class="price__not">299 грн</span>
+													<span class="price__actual"> <span class="price__title">цена:</span> 299
+														грн</span>
+												</div>
+												<div class="card__button"><button class="button__basket">Добавить в корзину</button>
+												</div>
+											</div>
+										</div>
+
+										<div class="catalog__card">
+											<div class="card__img">
+												<div class="card__status">
+													<!-- <span class="card__new"> Новинка</span>
+													<span class="card__top-sale"> Топ продаж</span> -->
+													<span class="card__sale">Распродажа</span>
+												</div>
+												<?xml version="1.0"?><svg width="640" height="480" viewbox="0 0 640 480"
+													xmlns="http://www.w3.org/2000/svg">
+													<title>Small red heart with transparent background</title>
+													<g>
+														<title>Layer 1</title>
+														<g id="layer1">
+															<path id="svg_2"
+																d="m219.28949,21.827393c-66.240005,0 -119.999954,53.76001 -119.999954,120c0,134.755524 135.933151,170.08728 228.562454,303.308044c87.574219,-132.403381 228.5625,-172.854584 228.5625,-303.308044c0,-66.23999 -53.759888,-120 -120,-120c-48.047913,0 -89.401611,28.370422 -108.5625,69.1875c-19.160797,-40.817078 -60.514496,-69.1875 -108.5625,-69.1875z" />
+														</g>
+													</g>
+												</svg>
+
+												<img src="img/Mask Group (1).png" alt="smoke" class="img__cigarette">
+											</div>
+											<div class="card__content">
+
+												<div class="card__reting reting_set">
+													<div class="reting__body">
+														<div class="reting__active"></div>
+														<div class="reting__items">
+															<input type="radio" class="reting__item" value="1" name="reting">
+															<input type="radio" class="reting__item" value="2" name="reting">
+															<input type="radio" class="reting__item" value="3" name="reting">
+															<input type="radio" class="reting__item" value="4" name="reting">
+															<input type="radio" class="reting__item" value="5" name="reting">
+														</div>
+													</div>
+													<div class="reting__value">2</div>
+												</div>
+
+												<div class="card__title">VAPORLAX AERO - LUSH ICE - 800 PUFF</div>
+												<div class="card__price">
+													<span class="price__not">299 грн</span>
+													<span class="price__actual"> <span class="price__title">цена:</span> 299
+														грн</span>
+												</div>
+												<div class="card__button"><button class="button__basket">Добавить в корзину</button>
+												</div>
+											</div>
+										</div>
+
+										<div class="catalog__card">
+											<div class="card__img">
+												<div class="card__status">
+													<span class="card__new"> Новинка</span>
+													<!-- 	<span class="card__top-sale"> Топ продаж</span>
+													<span class="card__sale">Распродажа</span> -->
+												</div>
+												<?xml version="1.0"?><svg width="640" height="480" viewbox="0 0 640 480"
+													xmlns="http://www.w3.org/2000/svg">
+													<title>Small red heart with transparent background</title>
+													<g>
+														<title>Layer 1</title>
+														<g id="layer1">
+															<path id="svg_2"
+																d="m219.28949,21.827393c-66.240005,0 -119.999954,53.76001 -119.999954,120c0,134.755524 135.933151,170.08728 228.562454,303.308044c87.574219,-132.403381 228.5625,-172.854584 228.5625,-303.308044c0,-66.23999 -53.759888,-120 -120,-120c-48.047913,0 -89.401611,28.370422 -108.5625,69.1875c-19.160797,-40.817078 -60.514496,-69.1875 -108.5625,-69.1875z" />
+														</g>
+													</g>
+												</svg>
+
+												<img src="img/Mask Group (2).png" alt="smoke" class="img__cigarette">
+											</div>
+											<div class="card__content">
+
+												<div class="card__reting reting_set">
+													<div class="reting__body">
+														<div class="reting__active"></div>
+														<div class="reting__items">
+															<input type="radio" class="reting__item" value="1" name="reting">
+															<input type="radio" class="reting__item" value="2" name="reting">
+															<input type="radio" class="reting__item" value="3" name="reting">
+															<input type="radio" class="reting__item" value="4" name="reting">
+															<input type="radio" class="reting__item" value="5" name="reting">
+														</div>
+													</div>
+													<div class="reting__value">2</div>
+												</div>
+
+												<div class="card__title">VAPORLAX AERO - LUSH ICE - 800 PUFF</div>
+												<div class="card__price">
+													<span class="price__not">299 грн</span>
+													<span class="price__actual"> <span class="price__title">цена:</span> 299
+														грн</span>
+												</div>
+												<div class="card__button"><button class="button__basket">Добавить в корзину</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</section>
+						</div>
+					</div>
+				</div>
+			</main>
+
+		</div>
+	</div>
+
+
+	<script src="js/discount.js"></script>
+	<script src="js/catalog.js"></script>
+</body>
+
+</html>
