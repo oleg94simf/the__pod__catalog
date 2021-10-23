@@ -839,12 +839,17 @@ header {
 		color: #ffffff;
 		opacity: 0.3;
 		margin-right: 9px;
+		display: flex;
+		align-items: center;
 	}
 
 	&__address {
 	}
 }
-
+.name__address {
+	position: relative;
+	top: -5px;
+}
 .bots__item {
 	margin-top: 29px;
 
@@ -855,7 +860,6 @@ header {
 
 .contact__item {
 	display: flex;
-	align-items: center;
 	margin-top: 20px;
 	&:first-of-type {
 		margin: 0;
@@ -987,8 +991,8 @@ header {
 		}
 
 		.contact__item {
-			display: flex;
-			flex-direction: column;
+			display: block;
+			text-align: center;
 		}
 		.footer__viber {
 			position: relative;
@@ -996,6 +1000,8 @@ header {
 		}
 		.contact__name {
 			margin-bottom: 10px;
+			display: block;
+			text-align: center;
 		}
 	}
 }
