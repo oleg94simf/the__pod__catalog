@@ -16,6 +16,7 @@ body {
 header {
 	height: 100px;
 }
+
 /********************************************
 ************************catalog-filter*******
 *******************************************/
@@ -165,7 +166,8 @@ header {
 		padding: 15px;
 		border-radius: 0px 10px 10px 0px;
 		color: #797979;
-		@include font(normal) font-size: 20px;
+		@include font(normal);
+		font-size: 20px;
 		line-height: 23px;
 	}
 
@@ -176,7 +178,7 @@ header {
 		cursor: pointer;
 		position: absolute;
 		right: 18px;
-		top: 13px;
+		top: 15px;
 		display: inline-block;
 	}
 
@@ -453,7 +455,7 @@ header {
 		display: inline-block;
 	}
 	.catalog__nav {
-		margin: 100px 0 15px 0;
+		margin: 115px 0 15px 0;
 	}
 	.catalog__wrap {
 		flex: 0 1 100%;
@@ -619,6 +621,11 @@ header {
 @media (max-width: 701.98px) {
 	.button__basket {
 		padding: 18px 10px;
+		&:hover {
+			color: #797979;
+			background: transparent;
+			border: 1px solid #e4e4e4;
+		}
 	}
 }
 @media (max-width: 575.98px) {

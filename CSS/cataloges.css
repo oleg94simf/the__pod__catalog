@@ -197,7 +197,7 @@ header {
   cursor: pointer;
   position: absolute;
   right: 18px;
-  top: 13px;
+  top: 15px;
   display: inline-block;
 }
 
@@ -544,7 +544,7 @@ header {
     display: inline-block;
   }
   .catalog__nav {
-    margin: 100px 0 15px 0;
+    margin: 115px 0 15px 0;
   }
   .catalog__wrap {
     -webkit-box-flex: 0;
@@ -726,6 +726,11 @@ header {
 @media (max-width: 701.98px) {
   .button__basket {
     padding: 18px 10px;
+  }
+  .button__basket:hover {
+    color: #797979;
+    background: transparent;
+    border: 1px solid #e4e4e4;
   }
 }
 
