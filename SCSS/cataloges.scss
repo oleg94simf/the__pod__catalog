@@ -673,6 +673,9 @@ header {
 }
 
 @media (max-width: 767.98px) {
+	.img__heart {
+		display: none;
+	}
 	.button__heart {
 		display: flex;
 		align-items: center;
