@@ -63,6 +63,7 @@ function initRetings() {
 	}
 }
 
+//like
 let likes = document.querySelectorAll('#svg_2');
 
 for (let i = 0; i < likes.length; i++) {
@@ -73,3 +74,40 @@ for (let i = 0; i < likes.length; i++) {
 	})
 }
 
+
+//mobile-menu****************************************
+
+let catalogFilterMobile = document.querySelector('.catalog__filter');
+let openMobileMenu = document.querySelector('.search__open-menu');
+let fonBody = document.querySelector('.fon-menu');
+let closedMobileMenu = document.querySelector('.closed__buttom');
+if (openMobileMenu) {
+	openMobileMenu.addEventListener('click', function () {
+		catalogFilterMobile.classList.add('__open');
+		document.body.classList.add('__lock');
+		fonBody.classList.add('fon-open');
+	})
+}
+
+if (closedMobileMenu) {
+	closedMobileMenu.addEventListener('click', function () {
+		catalogFilterMobile.classList.remove('__open');
+		document.body.classList.remove('__lock');
+		fonBody.classList.remove('fon-open');
+	})
+}
+
+let customTitle = document.querySelectorAll('.custom__title');
+
+
+
+if (customTitle) {
+	let customCheckbox = document.querySelectorAll('.custom__container');
+	let customSparow = document.querySelectorAll('.filter__sparow');
+	for (let i = 0; i < customTitle.length; i++) {
+		customTitle[i].addEventListener('click', function () {
+			customSparow[i].classList.toggle('__sparow');
+			customCheckbox[i].classList.toggle('fon-open');
+		})
+	}
+}
